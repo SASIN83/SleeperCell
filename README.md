@@ -1,12 +1,16 @@
-# Sleep-Bot
-
-A discord bot that tracks sleep and creates habit with gamification.
+# SleeperCell
+## Features
+- A discord bot that tracks sleep and creates habit with gamification.
+- Leaderboard of Discord Users
+- Daily Sleep Score
+- Weekly Average Sleep Hours
+- Clock, Login, Registration
 
 ## Docs
-
+### Discord Commands
 ### $setup <timegoal [HH:MM]> <timezone [+/-HH:MM]>
 
-This is probably the only confusing command. Timegoal represents when you want to wake up in 24 hour time (ie 05:00 would be 5am). Timezone represents your offset relative to UTC. For example, IST is +5.30 ahead of UTC, so the timezone would be +05:30. EST would be -05:00 etc. An example of the full command: **$setup 05:00 +05:30**
+This is probably the only confusing command. Timegoal represents when you want to wake up in 24 hour time (ie 05:00 would be 5am). Timezone represents your offset relative to UTC. For example, IST is +5.30 ahead of UTC, so the timezone would be +05:30. EST would be -05:00 etc. An example of the full command: **setup 18:00 +05:30**
 
 ### $reset
 
@@ -29,6 +33,22 @@ View a live version of the leaderboards, along with help on: [NeuralWorks Sleep 
 - venv (optional)
 - pip install -r "requirements.txt"
 - Setup mongoDb
-- Fill out env (rename to .env)
+- Setup Discord
+- Fill out MongoDB and Discord credentials in env and rename to .env
+
+## How to run SleeperCell
+After setting up SleeperCell Discord and Database, open Command Prompt or Terminal
+
+```
+git clone https://github.com/SASIN83/SleeperCell.git
+```
+```
+cd SleeperCell
+```
+```
+flask run app.py
+```
+
+Now head over to http://127.0.0.1:5000/, and you should see your Dashboard.
 
 **open to all pull requests!**
