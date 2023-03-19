@@ -1,4 +1,9 @@
 # SleeperCell
+
+It is a sleep tracking web application which visualizes sleep data on a bar graph, gets daily sleep score based on how many hours you slept and weekly average sleep hours. I also attempted to gamify the application to improve sleep quality of users with a leaderboard to checks how punctual you are about your sleep using a discord bot.
+
+Note: I am a Backend developer so please improvise UI as suggested in Issues and also solve some issues in it.
+
 ## Features
 - A discord bot that tracks sleep and creates habit with gamification.
 - Leaderboard of Discord Users
