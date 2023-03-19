@@ -33,6 +33,22 @@ View a live version of the leaderboards, along with help on: [NeuralWorks Sleep 
 - venv (optional)
 - pip install -r "requirements.txt"
 - Setup mongoDb
-- Fill out env (rename to .env)
+- Setup Discord
+- Fill out MongoDB and Discord credentials in env and rename to .env
+
+## How to run SleeperCell
+After setting up SleeperCell Discord and Database, open Command Prompt or Terminal
+
+```
+git clone https://github.com/SASIN83/SleeperCell.git
+```
+```
+cd SleeperCell
+```
+```
+flask run app.py
+```
+
+Now head over to http://127.0.0.1:5000/, and you should see your Dashboard.
 
 **open to all pull requests!**
