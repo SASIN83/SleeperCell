@@ -51,4 +51,14 @@ flask run app.py
 
 Now head over to http://127.0.0.1:5000/, and you should see your Dashboard.
 
+## SleeperCell's file Working 
+- Static folder has all JavaScript and CSS files
+- Templates folder has all HTML Template files
+- app.py has main funcions, database setup code and flask program
+- bot.py has discord bot program
+- timezones.py is used to convert your timezone to GMT timezone for Discord Bot
+- env file has configuration for Discord and MongoDB
+- Procfile can be used to setup gunicorn and server
+- dbscript.py has all code for database which is also included directly into app.py due to concurrent files conflict.
+
 **open to all pull requests!**
