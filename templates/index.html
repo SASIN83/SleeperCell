@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+  .help {
+    color: #999;
+  }
+</style>
+<main>
+  <h2 id="leaderboard-title">&#127942; LEADERBOARD &#127942;</h2>
+  <table>
+    <tr>
+      <th class="lb-head names" style="text-decoration: underline">NAME</th>
+      <th class="lb-head names" style="text-decoration: underline">TIME</th>
+      <th
+        class="lb-head scores"
+        style="color: #5994af; text-decoration: underline"
+      >
+        STREAK
+      </th>
+    </tr>
+    {% if len > 0 %}
+    <tr class="first">
+      <td class="names">{{ leaderboard[0][0] }}</td>
+      <td class="names">{{ leaderboard[0][2] }}</td>
+      <td class="scores" style="text-align: center">{{ leaderboard[0][1] }}</td>
+    </tr>
+    {% endif %} {% if len > 1 %}
+    <tr class="second">
+      <td class="names">{{ leaderboard[1][0] }}</td>
+      <td class="names">{{ leaderboard[1][2] }}</td>
+      <td class="scores" style="text-align: center">{{ leaderboard[1][1] }}</td>
+    </tr>
+    {% endif %} {% if len > 2 %}
+    <tr class="third">
+      <td class="names">{{ leaderboard[2][0] }}</td>
+      <td class="names">{{ leaderboard[2][2] }}</td>
+      <td class="scores" style="text-align: center">{{ leaderboard[2][1] }}</td>
+    </tr>
+    {% endif %} {% for i in range(3, len) %}
+    <tr>
+      <td class="names">{{ leaderboard[i][0] }}</td>
+      <td class="names">{{ leaderboard[i][2] }}</td>
+      <td class="scores" style="color: #437085; text-align: center">
+        {{ leaderboard[i][1] }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  {% endblock %}
+</main>
